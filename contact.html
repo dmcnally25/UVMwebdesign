@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kung Fu Contact</title>
+  <script src="script.js" defer></script>
+</head>
+
+  <body style="background-color:beige;">
+    <header>
+          <h1 style="background-color: rgb(194, 202, 232)">Complete this form to join my mailing list</h1>
+          <figure>
+              <img src="images/chinese_dragon_wall.jpg" width="1200" height="250" alt="Imperial Palace Dragon Wall">
+              <figcaption class="caption-style">Dragon Wall in the Forbidden City.</figcaption>
+          </figure>
+    </header>
+    <hr>  
+    <!--FORM FOR CONTACT INFO--> 
+
+    <h2>CONTACT INFO</h2>
+    <form id="contactForm">
+      <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email"><br>
+      <hr>
+      
+    <h2>HAVE YOUR STUDIED MARTIAL ARTS BEFORE?</h2>
+      <label for="yes">Yes</label>
+        <input type="radio" id="yes" name="experience" value="yes"/>
+      <label for="no">No</label>
+        <input type="radio" id="no" name="experience" value="no"/>
+      <br>
+
+      <label for="years">If yes, how long did you study?</label>
+        <select id="years" name="years">
+            <option value="">(select one)</option>
+            <option value="beginner">less than 1 year></option>
+            <option value="intermediate">1-5 years</option>
+            <option value="advanced">5-10 years</option>
+            <option value="expert">more than 10 years</option>
+        </select>
+        
+      <label for="pastexp"><h3>Tell me more of your past experience</h3></label>
+        <textarea id="pastexp" name="pastexp" rows="3" cols="30" placeholder="If 'yes', please give some details..."></textarea><br>
+      <hr>
+    
+    <h2>YOUR GOALS FOR LEARNING KUNG FU?</h2>
+      <label for="health">
+          <input type="checkbox" id="health" name="goal" value="health" />Overall health</label><br>
+      <label for="flexibility">
+          <input type="checkbox" id="flexibility" name="goal" value="flexibility" />Flexibility</label><br>
+      <label for="confidence">
+          <input type="checkbox" id="confidence" name="goal" value="confidence" />Confidence</label><br>    
+      <label for="selfdefense">
+          <input type="checkbox" id="selfdefense" name="goal" value="selfdefense" />Self-Defense</label><br> 
+      <label for="concentration">
+          <input type="checkbox" id="concentration" name="goal" value="concentration" />Improve Concentration</label><br>
+      <label for="sparring">
+          <input type="checkbox" id="sparring" name="goal" value="sparring" />Learn sparring</label><br> 
+      <hr>  
+
+      <button type="submit">Save</button>
+      <button type="button" onclick="clearForm()">Clear Form</button>
+      <button id="downloadBtn" type="button">Download Data</button>
+        
+    </form>    
+   </body>
+</html>
+    
